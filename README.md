@@ -1,4 +1,4 @@
-# Square1 CoreData
+# Square1 Media
 
 <p align="center">
 <img src="https://img.shields.io/cocoapods/v/Square1Media.svg" alt="Cocoapods"/>
