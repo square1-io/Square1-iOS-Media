@@ -14,7 +14,7 @@ internal let AnotherPlayerDidStartPlaying = "AnotherPlayerDidStartPlaying"
 
 /// A wrapper to deal with Audio streaming.
 /// It uses Reachability to handle network connectivity changes.
-class AudioStreamer: NSObject {
+public class AudioStreamer: NSObject {
   
   // MARK: Properties
   private var player: AVPlayer
@@ -46,7 +46,7 @@ class AudioStreamer: NSObject {
   }
   
   // MARK: Lifecycle & Setup
-  init(url: URL) {
+  public init(url: URL) {
     audioUrl = url
     player = AVPlayer(url: audioUrl)
     
@@ -153,7 +153,7 @@ class AudioStreamer: NSObject {
   @objc private func itemDidFailToPlayToEndTime(notification: Notification) {
     player.pause()
     let error = self.player.currentItem?.error as NSError?
-    delegate?.playerItemFailedToPlayEndTime(withError: error)
+    delegate?.playerItemFailedToPlayEndTime(error: error)
   }
   
   @objc private func itemDidStall(notification: Notification) {
@@ -169,10 +169,10 @@ class AudioStreamer: NSObject {
   }
   
   // MARK: KVO
-  override func observeValue(forKeyPath keyPath: String?,
-                             of object: Any?,
-                             change: [NSKeyValueChangeKey : Any]?,
-                             context: UnsafeMutableRawPointer?) {
+  override public func observeValue(forKeyPath keyPath: String?,
+                                    of object: Any?,
+                                    change: [NSKeyValueChangeKey : Any]?,
+                                    context: UnsafeMutableRawPointer?) {
     if let streamer = object as? AudioStreamer,
        streamer == self,
        let keyPath = keyPath,
@@ -181,7 +181,7 @@ class AudioStreamer: NSObject {
       if player.status == .failed {
         player.pause()
         let error = self.player.error as NSError?
-        delegate?.playerDidFail(withError: error)
+        delegate?.playerDidFail(error: error)
       } else if player.status == .readyToPlay {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: AnotherPlayerDidStartPlaying), object: self)
         delegate?.playerReadyToPlay()
@@ -200,7 +200,7 @@ class AudioStreamer: NSObject {
         delegate?.playerItemReadyToPlay()
       } else if item.status == .failed {
         let error = self.player.currentItem?.error as NSError?
-        delegate?.playerDidFail(withError: error)
+        delegate?.playerDidFail(error: error)
       }
     }
     

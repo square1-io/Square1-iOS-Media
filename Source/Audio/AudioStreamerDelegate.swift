@@ -8,28 +8,28 @@
 
 import Foundation
 
-protocol AudioStreamerDelegate: class {
+public protocol AudioStreamerDelegate: class {
   func playerRateChanged(isPlaying: Bool)
   func playerDidReachEnd()
-  func playerDidFail(withError error: NSError?)
-  func playerItemDidFail(withError error: NSError?)
+  func playerDidFail(error: NSError?)
+  func playerItemDidFail(error: NSError?)
   func playerReadyToPlay()
   func playerItemReadyToPlay()
   func playerItemBufferEmpty()
   func playerItemBufferReady()
-  func playerItemFailedToPlayEndTime(withError error: NSError?)
+  func playerItemFailedToPlayEndTime(error: NSError?)
   func playerItemPlaybackStalled()
 }
 
-extension AudioStreamerDelegate {
+public extension AudioStreamerDelegate {
   func playerRateChanged(isPlaying: Bool) {}
   func playerDidReachEnd() {}
-  func playerDidFail(withError error: NSError?) {}
-  func playerItemDidFail(withError error: NSError?) {}
+  func playerDidFail(error: NSError?) {}
+  func playerItemDidFail(error: NSError?) {}
   func playerReadyToPlay() {}
   func playerItemReadyToPlay() {}
   func playerItemBufferEmpty() {}
   func playerItemBufferReady() {}
-  func playerItemFailedToPlayEndTime(withError error: NSError?) {}
+  func playerItemFailedToPlayEndTime(error: NSError?) {}
   func playerItemPlaybackStalled() {}
 }
