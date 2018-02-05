@@ -1,16 +1,12 @@
 PODS:
-  - Square1Tools (1.0.1)
+  - Square1Network (1.0.1)
 
 DEPENDENCIES:
-  - Square1Tools (from `/Users/Wedge/Proyectos/square1/Square1Tools`)
-
-EXTERNAL SOURCES:
-  Square1Tools:
-    :path: /Users/Wedge/Proyectos/square1/Square1Tools
+  - Square1Network
 
 SPEC CHECKSUMS:
-  Square1Tools: 365064b4a64443af5e8c1f0403a4e0fd659a1c28
+  Square1Network: a0a8af91c6cbc91a69a0f65b9b6102bee380fe16
 
-PODFILE CHECKSUM: 4bdd2fbf3568514be4a77cfd5a2c63aac140d69f
+PODFILE CHECKSUM: 2b6fe6ca0ca5023827dffc73b4cf5263d7f8d07e
 
 COCOAPODS: 1.4.0

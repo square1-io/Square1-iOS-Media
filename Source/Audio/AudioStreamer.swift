@@ -8,10 +8,12 @@
 
 import Foundation
 import AVFoundation
-import Square1Tools
+import Square1Network
 
 internal let AnotherPlayerDidStartPlaying = "AnotherPlayerDidStartPlaying"
 
+/// A wrapper to deal with Audio streaming.
+/// It uses Reachability to handle network connectivity changes.
 class AudioStreamer: NSObject {
   
   // MARK: Properties

@@ -1,0 +1,6 @@
+framework module Square1Network {
+  umbrella header "Square1Network-umbrella.h"
+
+  export *
+  module * { export * }
+}

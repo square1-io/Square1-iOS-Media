@@ -105,7 +105,6 @@
 		D9206BD62024B04700C1B4D0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D9239E9220287B4800401215 /* Image */,
 				D9206BF02024B0EC00C1B4D0 /* Audio */,
 				D9206BD72024B04700C1B4D0 /* Square1Media.h */,
 				D9206BD82024B04700C1B4D0 /* Info.plist */,
@@ -128,13 +127,6 @@
 				D9206BF12024B11F00C1B4D0 /* AudioStreamerDelegate.swift */,
 			);
 			path = Audio;
-			sourceTree = "<group>";
-		};
-		D9239E9220287B4800401215 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,11 +263,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Square1MediaTests/Pods-Square1MediaTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Square1Tools/Square1Tools.framework",
+				"${BUILT_PRODUCTS_DIR}/Square1Network/Square1Network.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Square1Tools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Square1Network.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "Square1Tools.h"
+#import "Square1Network.h"
 
-FOUNDATION_EXPORT double Square1ToolsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Square1ToolsVersionString[];
+FOUNDATION_EXPORT double Square1NetworkVersionNumber;
+FOUNDATION_EXPORT const unsigned char Square1NetworkVersionString[];
 

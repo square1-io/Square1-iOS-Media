@@ -1,6 +1,0 @@
-framework module Square1Tools {
-  umbrella header "Square1Tools-umbrella.h"
-
-  export *
-  module * { export * }
-}

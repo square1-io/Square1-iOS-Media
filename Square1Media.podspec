@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/square1-io/Square1-iOS-Media.git", :tag => s.version }
   s.source_files  = "Source", "Source/**/*.swift"
-
+  s.dependency 'Square1Network'
 end

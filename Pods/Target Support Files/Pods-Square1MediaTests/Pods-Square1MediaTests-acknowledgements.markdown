@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Square1Tools
+## Square1Network
 
 MIT License
 
