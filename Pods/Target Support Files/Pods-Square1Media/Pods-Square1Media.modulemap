@@ -1,0 +1,6 @@
+framework module Pods_Square1Media {
+  umbrella header "Pods-Square1Media-umbrella.h"
+
+  export *
+  module * { export * }
+}

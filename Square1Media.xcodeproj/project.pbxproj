@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053B6A5A281FFFA27B2FEA55 /* Pods_Square1MediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6515F4E90DB3884C7763783C /* Pods_Square1MediaTests.framework */; };
+		97EEC15CC8A6F5B4938AE20D /* Pods_Square1Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE3DF1E2BEB5DE2AAE8A3B4 /* Pods_Square1Media.framework */; };
 		D9206BDE2024B04700C1B4D0 /* Square1Media.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9206BD42024B04700C1B4D0 /* Square1Media.framework */; };
-		D9206BE32024B04700C1B4D0 /* Square1MediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9206BE22024B04700C1B4D0 /* Square1MediaTests.swift */; };
 		D9206BE52024B04700C1B4D0 /* Square1Media.h in Headers */ = {isa = PBXBuildFile; fileRef = D9206BD72024B04700C1B4D0 /* Square1Media.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9206BEF2024B0E900C1B4D0 /* AudioStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9206BEE2024B0E900C1B4D0 /* AudioStreamer.swift */; };
+		D9206BF22024B11F00C1B4D0 /* AudioStreamerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9206BF12024B11F00C1B4D0 /* AudioStreamerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DD93A2E9435E0A432B7A13C /* Pods-Square1Media.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Square1Media.release.xcconfig"; path = "Pods/Target Support Files/Pods-Square1Media/Pods-Square1Media.release.xcconfig"; sourceTree = "<group>"; };
+		492622BED52C4D1ECABCD41D /* Pods-Square1MediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Square1MediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Square1MediaTests/Pods-Square1MediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FF08255C86BCF4C12894528 /* Pods-Square1Media.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Square1Media.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Square1Media/Pods-Square1Media.debug.xcconfig"; sourceTree = "<group>"; };
+		6515F4E90DB3884C7763783C /* Pods_Square1MediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Square1MediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CE3DF1E2BEB5DE2AAE8A3B4 /* Pods_Square1Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Square1Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9206BD42024B04700C1B4D0 /* Square1Media.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Square1Media.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9206BD72024B04700C1B4D0 /* Square1Media.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square1Media.h; sourceTree = "<group>"; };
 		D9206BD82024B04700C1B4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9206BDD2024B04700C1B4D0 /* Square1MediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Square1MediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9206BE22024B04700C1B4D0 /* Square1MediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square1MediaTests.swift; sourceTree = "<group>"; };
 		D9206BE42024B04700C1B4D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9206BEE2024B0E900C1B4D0 /* AudioStreamer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStreamer.swift; sourceTree = "<group>"; };
+		D9206BF12024B11F00C1B4D0 /* AudioStreamerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioStreamerDelegate.swift; sourceTree = "<group>"; };
+		F88D498BE7B96F4915AA76E9 /* Pods-Square1MediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Square1MediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Square1MediaTests/Pods-Square1MediaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97EEC15CC8A6F5B4938AE20D /* Pods_Square1Media.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +55,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9206BDE2024B04700C1B4D0 /* Square1Media.framework in Frameworks */,
+				053B6A5A281FFFA27B2FEA55 /* Pods_Square1MediaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3772DF3EFA03C47398512B29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FF08255C86BCF4C12894528 /* Pods-Square1Media.debug.xcconfig */,
+				3DD93A2E9435E0A432B7A13C /* Pods-Square1Media.release.xcconfig */,
+				492622BED52C4D1ECABCD41D /* Pods-Square1MediaTests.debug.xcconfig */,
+				F88D498BE7B96F4915AA76E9 /* Pods-Square1MediaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C43D9DF943F9EF6245B19A6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CE3DF1E2BEB5DE2AAE8A3B4 /* Pods_Square1Media.framework */,
+				6515F4E90DB3884C7763783C /* Pods_Square1MediaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9206BCA2024B04700C1B4D0 = {
 			isa = PBXGroup;
 			children = (
-				D9206BD62024B04700C1B4D0 /* Square1Media */,
-				D9206BE12024B04700C1B4D0 /* Square1MediaTests */,
+				D9206BD62024B04700C1B4D0 /* Source */,
+				D9206BE12024B04700C1B4D0 /* Tests */,
 				D9206BD52024B04700C1B4D0 /* Products */,
+				3772DF3EFA03C47398512B29 /* Pods */,
+				C43D9DF943F9EF6245B19A6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,22 +102,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D9206BD62024B04700C1B4D0 /* Square1Media */ = {
+		D9206BD62024B04700C1B4D0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D9239E9220287B4800401215 /* Image */,
+				D9206BF02024B0EC00C1B4D0 /* Audio */,
 				D9206BD72024B04700C1B4D0 /* Square1Media.h */,
 				D9206BD82024B04700C1B4D0 /* Info.plist */,
 			);
-			path = Square1Media;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		D9206BE12024B04700C1B4D0 /* Square1MediaTests */ = {
+		D9206BE12024B04700C1B4D0 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D9206BE22024B04700C1B4D0 /* Square1MediaTests.swift */,
 				D9206BE42024B04700C1B4D0 /* Info.plist */,
 			);
-			path = Square1MediaTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D9206BF02024B0EC00C1B4D0 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				D9206BEE2024B0E900C1B4D0 /* AudioStreamer.swift */,
+				D9206BF12024B11F00C1B4D0 /* AudioStreamerDelegate.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		D9239E9220287B4800401215 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9206BE82024B04700C1B4D0 /* Build configuration list for PBXNativeTarget "Square1Media" */;
 			buildPhases = (
+				85732231458C721F54C286B4 /* [CP] Check Pods Manifest.lock */,
 				D9206BCF2024B04700C1B4D0 /* Sources */,
 				D9206BD02024B04700C1B4D0 /* Frameworks */,
 				D9206BD12024B04700C1B4D0 /* Headers */,
 				D9206BD22024B04700C1B4D0 /* Resources */,
+				1F6061542104165C0FD21ED0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9206BEB2024B04700C1B4D0 /* Build configuration list for PBXNativeTarget "Square1MediaTests" */;
 			buildPhases = (
+				B43BEF838C56A5418D795216 /* [CP] Check Pods Manifest.lock */,
 				D9206BD92024B04700C1B4D0 /* Sources */,
 				D9206BDA2024B04700C1B4D0 /* Frameworks */,
 				D9206BDB2024B04700C1B4D0 /* Resources */,
+				3169E0861F5BAF9817B6FAC8 /* [CP] Embed Pods Frameworks */,
+				B6981DB9EA835E28C24A045E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +204,7 @@
 				TargetAttributes = {
 					D9206BD32024B04700C1B4D0 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					D9206BDC2024B04700C1B4D0 = {
@@ -191,11 +248,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F6061542104165C0FD21ED0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Square1Media/Pods-Square1Media-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3169E0861F5BAF9817B6FAC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Square1MediaTests/Pods-Square1MediaTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Square1Tools/Square1Tools.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Square1Tools.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Square1MediaTests/Pods-Square1MediaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85732231458C721F54C286B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Square1Media-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B43BEF838C56A5418D795216 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Square1MediaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6981DB9EA835E28C24A045E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Square1MediaTests/Pods-Square1MediaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9206BCF2024B04700C1B4D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9206BEF2024B0E900C1B4D0 /* AudioStreamer.swift in Sources */,
+				D9206BF22024B11F00C1B4D0 /* AudioStreamerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +349,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9206BE32024B04700C1B4D0 /* Square1MediaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -321,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -333,7 +478,9 @@
 		};
 		D9206BE92024B04700C1B4D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF08255C86BCF4C12894528 /* Pods-Square1Media.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -341,12 +488,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Square1Media/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.square1.Square1Media;
+				PRODUCT_BUNDLE_IDENTIFIER = io.square1.ios.media;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,7 +502,9 @@
 		};
 		D9206BEA2024B04700C1B4D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD93A2E9435E0A432B7A13C /* Pods-Square1Media.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -362,10 +512,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Square1Media/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.square1.Square1Media;
+				PRODUCT_BUNDLE_IDENTIFIER = io.square1.ios.media;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -375,12 +525,13 @@
 		};
 		D9206BEC2024B04700C1B4D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 492622BED52C4D1ECABCD41D /* Pods-Square1MediaTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X2SE3LG2B;
-				INFOPLIST_FILE = Square1MediaTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.square1.Square1MediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.square1.ios.media.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,12 +540,13 @@
 		};
 		D9206BED2024B04700C1B4D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F88D498BE7B96F4915AA76E9 /* Pods-Square1MediaTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X2SE3LG2B;
-				INFOPLIST_FILE = Square1MediaTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.square1.Square1MediaTests;
+				PRODUCT_BUNDLE_IDENTIFIER = io.square1.ios.media.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
